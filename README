@@ -1,0 +1,21 @@
+Remove Nth Node From End of List
+
+Given the head of a linked list, remove the nth node from the end of the list and return its head.
+
+Input: head = [1,2,3,4,5], n = 2
+Output: [1,2,3,5]
+
+----
+One pass algorithm
+
+1. Create a dummy node, where next is the ll
+2. Create copies of this node, first, and second
+3. move the first pointer up n + 1
+4. move the first pointer to the end, while moving the second pointer, to maintain the space between the two
+5. set the second pointer next to next.next
+6. return dummy.Next
+
+
+Time and Space: O(N) N is the number of nodes, O(1)
+
+
